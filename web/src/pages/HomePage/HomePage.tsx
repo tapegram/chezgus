@@ -14,6 +14,7 @@ const HomePage = () => {
         My default route is named <code>home</code>, link to me with `
         <Link to={routes.home()}>Home</Link>`
       </p>
+      <img src="/img/housefront.jpg" alt="House"/>
     </>
   )
 }
