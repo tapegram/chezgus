@@ -5,8 +5,6 @@ const HomePage = () => {
   return (
     <>
       <MetaTags title="Home" description="Home page" />
-
-      <h1>Gus's Getaway</h1>
       <div className="w-full p-4">
         <main role="main" className="w-full flex flex-col h-screen content-center justify-center">
           <div className="w-full sm:w-1/2 lg:w-1/3 bg-gray-50 rounded-xl m-auto">
