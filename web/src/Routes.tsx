@@ -16,6 +16,7 @@ const Routes = () => {
       <Set wrap={BaseLayout}>
         <Route path="/beach" page={BeachPage} name="beach" />
         <Route path="/photos" page={PhotosPage} name="photos" />
+        <Route path="/borrow" page={BorrowPage} name="borrow" />
         <Route path="/" page={HomePage} name="home" />
         <Route notfound page={NotFoundPage} />
       </Set>
