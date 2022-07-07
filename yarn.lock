@@ -3536,7 +3536,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@popperjs/core@npm:^2.9.3":
+"@popperjs/core@npm:^2.6.0, @popperjs/core@npm:^2.9.3":
   version: 2.11.5
   resolution: "@popperjs/core@npm:2.11.5"
   checksum: 1253c23004dbd69a48f6d0c2febbb9fca2173deab2bdb1d34f46f9870f913b121e7d113a852088544bb2ec175ff6db645169ffc84fad6febc1b533fa052804e1
@@ -8425,6 +8425,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"bootstrap@npm:^5.1.3":
+  version: 5.1.3
+  resolution: "bootstrap@npm:5.1.3"
+  peerDependencies:
+    "@popperjs/core": ^2.10.2
+  checksum: 78ab4c4df58c36faaddfa9da1dda9f6671576c54bf7ed34691628dbf406b62a44170f89d883e306ea755bd8e87ea833561717f2c3af5a026f177d2189e89c382
+  languageName: node
+  linkType: hard
+
 "boxen@npm:5.1.2, boxen@npm:^5.0.0, boxen@npm:^5.1.2":
   version: 5.1.2
   resolution: "boxen@npm:5.1.2"
@@ -9094,6 +9103,44 @@ __metadata:
   languageName: node
   linkType: hard
 
+"chart.js@npm:^2.9.4":
+  version: 2.9.4
+  resolution: "chart.js@npm:2.9.4"
+  dependencies:
+    chartjs-color: ^2.1.0
+    moment: ^2.10.2
+  checksum: 59bef7f0fdb3a52c66a4ba9821285d90db59b8c45bfc1be328e09e2d712cca8d6a804a64a25f0f67d979e81c11bb4be894ce99248f425724873fe5c3dff75cc7
+  languageName: node
+  linkType: hard
+
+"chartjs-color-string@npm:^0.6.0":
+  version: 0.6.0
+  resolution: "chartjs-color-string@npm:0.6.0"
+  dependencies:
+    color-name: ^1.0.0
+  checksum: 09097db49b7de080e49593e1e9234101fb38574dfeb1e014d0bc0fcbeb306ae6d20f81eadc75e1eb3ba5242440a3a4bc7a0660f98b0900544d53a9a3c2c90351
+  languageName: node
+  linkType: hard
+
+"chartjs-color@npm:^2.1.0":
+  version: 2.4.1
+  resolution: "chartjs-color@npm:2.4.1"
+  dependencies:
+    chartjs-color-string: ^0.6.0
+    color-convert: ^1.9.3
+  checksum: a36a6d5975b592464aba3e9dcee342b2de77f110c88b1a75a791df24211bcaf782be3d61896a79a5ac55f5d3c8a26b7f6986db9bd8d340826bc759ecc43505bd
+  languageName: node
+  linkType: hard
+
+"chartjs-plugin-datalabels@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "chartjs-plugin-datalabels@npm:0.7.0"
+  peerDependencies:
+    chart.js: ">= 2.7.0 < 3"
+  checksum: 8e8b1db6f5a1e30dec6a9bdf726a8d3abcfd04b930733c9fee8b1370f960336bd588acd938b33e6c67acbc4c85d31252fe02be1e19165eba7ac0d90a010ffecf
+  languageName: node
+  linkType: hard
+
 "checkpoint-client@npm:1.1.21":
   version: 1.1.21
   resolution: "checkpoint-client@npm:1.1.21"
@@ -9466,7 +9513,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"color-convert@npm:^1.9.0":
+"color-convert@npm:^1.9.0, color-convert@npm:^1.9.3":
   version: 1.9.3
   resolution: "color-convert@npm:1.9.3"
   dependencies:
@@ -9491,7 +9538,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"color-name@npm:^1.1.4, color-name@npm:~1.1.4":
+"color-name@npm:^1.0.0, color-name@npm:^1.1.4, color-name@npm:~1.1.4":
   version: 1.1.4
   resolution: "color-name@npm:1.1.4"
   checksum: a1a3f914156960902f46f7f56bc62effc6c94e84b2cae157a526b1c1f74b677a47ec602bf68a61abfa2b42d15b7c5651c6dbe72a43af720bc588dff885b10f95
@@ -10457,6 +10504,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"custom-event-polyfill@npm:^1.0.7":
+  version: 1.0.7
+  resolution: "custom-event-polyfill@npm:1.0.7"
+  checksum: b73c90d646d78f4acdff5453fa0f165f6d5506e32d074ca57d27f2bb7d9412356dab8cec7c00a0956b069e4987a8546a2c2c4b866d155e9fc4c27d223a225b78
+  languageName: node
+  linkType: hard
+
 "cyclist@npm:^1.0.1":
   version: 1.0.1
   resolution: "cyclist@npm:1.0.1"
@@ -10810,6 +10864,15 @@ __metadata:
   dependencies:
     repeat-string: ^1.5.4
   checksum: 969c7f5a04fc3f8c52eb3b9db2fd4ba20b9b9ce56c5659ebf4cf93ba6c1be68b651665d053affbe99e76733cf7d134546cdd6be038af368f8365f42a646d5fb8
+  languageName: node
+  linkType: hard
+
+"detect-autofill@npm:^1.1.3":
+  version: 1.1.4
+  resolution: "detect-autofill@npm:1.1.4"
+  dependencies:
+    custom-event-polyfill: ^1.0.7
+  checksum: 2fa6e4821488790566c193b5bf984f48c1ac703cc9bfd8c0f3fe577ada291cbab71e43db8b673c9f5fb2245c4c433baf6dacaa22b6dfc26c2febc81c5ad77fc9
   languageName: node
   linkType: hard
 
@@ -17994,6 +18057,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"moment@npm:^2.10.2":
+  version: 2.29.4
+  resolution: "moment@npm:2.29.4"
+  checksum: 844c6f3ce42862ac9467c8ca4f5e48a00750078682cc5bda1bc0e50cc7ca88e2115a0f932d65a06e4a90e26cb78892be9b3ca3dd6546ca2c4d994cebb787fc2b
+  languageName: node
+  linkType: hard
+
 "move-concurrently@npm:^1.0.1":
   version: 1.0.1
   resolution: "move-concurrently@npm:1.0.1"
@@ -19309,6 +19379,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"perfect-scrollbar@npm:^1.5.0":
+  version: 1.5.5
+  resolution: "perfect-scrollbar@npm:1.5.5"
+  checksum: 10f0c3a1205328b22e232be4ee9f0e832e96fb5b6c524d1d04e11f97ad910018c1c0659af145e0ae0dc2b41e67a96df12787de5366ff5ba86034339071ca722b
+  languageName: node
+  linkType: hard
+
 "picocolors@npm:^0.2.1":
   version: 0.2.1
   resolution: "picocolors@npm:0.2.1"
@@ -19497,6 +19574,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"popper.js@npm:^1.16.1":
+  version: 1.16.1
+  resolution: "popper.js@npm:1.16.1"
+  checksum: 1c1a826f757edb5b8c2049dfd7a9febf6ae1e9d0e51342fc715b49a0c1020fced250d26484619883651e097c5764bbcacd2f31496e3646027f079dd83e072681
+  languageName: node
+  linkType: hard
+
 "posix-character-classes@npm:^0.1.0":
   version: 0.1.1
   resolution: "posix-character-classes@npm:0.1.1"
@@ -19626,6 +19710,24 @@ __metadata:
     ts-node:
       optional: true
   checksum: 7d2cc6695c2fc063e4538316d651a687fdb55e48db453ff699de916a6ee55ab68eac2b120c28a6b8ca7aa746a588888351b810a215b5cd090eabea62c5762ede
+  languageName: node
+  linkType: hard
+
+"postcss-load-config@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "postcss-load-config@npm:4.0.1"
+  dependencies:
+    lilconfig: ^2.0.5
+    yaml: ^2.1.1
+  peerDependencies:
+    postcss: ">=8.0.9"
+    ts-node: ">=9.0.0"
+  peerDependenciesMeta:
+    postcss:
+      optional: true
+    ts-node:
+      optional: true
+  checksum: 5f568420c4d758d77d661f26914c08fe8dfb0666c7b779dc4f48d7fd880d131e8aa232a45cc1a8ba3f47f9c5fca572b661ca0103c2212979e9dc00918cff3d5f
   languageName: node
   linkType: hard
 
@@ -21335,7 +21437,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@npm:^1.1.7, resolve@npm:^1.10.0, resolve@npm:^1.11.1, resolve@npm:^1.13.1, resolve@npm:^1.14.2, resolve@npm:^1.19.0, resolve@npm:^1.20.0, resolve@npm:^1.22.0, resolve@npm:^1.3.2, resolve@npm:^1.9.0":
+"resolve@npm:^1.1.7, resolve@npm:^1.10.0, resolve@npm:^1.11.1, resolve@npm:^1.13.1, resolve@npm:^1.14.2, resolve@npm:^1.19.0, resolve@npm:^1.20.0, resolve@npm:^1.22.0, resolve@npm:^1.22.1, resolve@npm:^1.3.2, resolve@npm:^1.9.0":
   version: 1.22.1
   resolution: "resolve@npm:1.22.1"
   dependencies:
@@ -21374,7 +21476,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@^1.1.7#~builtin<compat/resolve>, resolve@patch:resolve@^1.10.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.11.1#~builtin<compat/resolve>, resolve@patch:resolve@^1.13.1#~builtin<compat/resolve>, resolve@patch:resolve@^1.14.2#~builtin<compat/resolve>, resolve@patch:resolve@^1.19.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.20.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.22.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.3.2#~builtin<compat/resolve>, resolve@patch:resolve@^1.9.0#~builtin<compat/resolve>":
+"resolve@patch:resolve@^1.1.7#~builtin<compat/resolve>, resolve@patch:resolve@^1.10.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.11.1#~builtin<compat/resolve>, resolve@patch:resolve@^1.13.1#~builtin<compat/resolve>, resolve@patch:resolve@^1.14.2#~builtin<compat/resolve>, resolve@patch:resolve@^1.19.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.20.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.22.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.22.1#~builtin<compat/resolve>, resolve@patch:resolve@^1.3.2#~builtin<compat/resolve>, resolve@patch:resolve@^1.9.0#~builtin<compat/resolve>":
   version: 1.22.1
   resolution: "resolve@patch:resolve@npm%3A1.22.1#~builtin<compat/resolve>::version=1.22.1&hash=07638b"
   dependencies:
@@ -21510,6 +21612,7 @@ __metadata:
     "@redwoodjs/core": 2.0.0
     flowbite: ^1.4.7
     flowbite-react: ^0.1.3
+    tw-elements: ^1.0.0-alpha12
   languageName: unknown
   linkType: soft
 
@@ -23059,6 +23162,41 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tailwindcss@npm:^3.0.7":
+  version: 3.1.5
+  resolution: "tailwindcss@npm:3.1.5"
+  dependencies:
+    arg: ^5.0.2
+    chokidar: ^3.5.3
+    color-name: ^1.1.4
+    detective: ^5.2.1
+    didyoumean: ^1.2.2
+    dlv: ^1.1.3
+    fast-glob: ^3.2.11
+    glob-parent: ^6.0.2
+    is-glob: ^4.0.3
+    lilconfig: ^2.0.5
+    normalize-path: ^3.0.0
+    object-hash: ^3.0.0
+    picocolors: ^1.0.0
+    postcss: ^8.4.14
+    postcss-import: ^14.1.0
+    postcss-js: ^4.0.0
+    postcss-load-config: ^4.0.1
+    postcss-nested: 5.0.6
+    postcss-selector-parser: ^6.0.10
+    postcss-value-parser: ^4.2.0
+    quick-lru: ^5.1.1
+    resolve: ^1.22.1
+  peerDependencies:
+    postcss: ^8.0.9
+  bin:
+    tailwind: lib/cli.js
+    tailwindcss: lib/cli.js
+  checksum: d9ab195db11dfa882beb05d8b314d3c1b9c8cff0bd3b34a499b88a07aa2b3755fe8ba18d2881169bef455d4dc8dfbddfe763421556295078c96f1869d9940f12
+  languageName: node
+  linkType: hard
+
 "tailwindcss@npm:^3.1.4":
   version: 3.1.4
   resolution: "tailwindcss@npm:3.1.4"
@@ -23745,6 +23883,23 @@ __metadata:
   version: 0.0.0
   resolution: "tty-browserify@npm:0.0.0"
   checksum: c0c68206565f1372e924d5cdeeff1a0d9cc729833f1da98c03d78be8f939e5f61a107bd0ab77d1ef6a47d62bb0e48b1081fbea273acf404959e22fd3891439c5
+  languageName: node
+  linkType: hard
+
+"tw-elements@npm:^1.0.0-alpha12":
+  version: 1.0.0-alpha9
+  resolution: "tw-elements@npm:1.0.0-alpha9"
+  dependencies:
+    "@popperjs/core": ^2.6.0
+    bootstrap: ^5.1.3
+    chart.js: ^2.9.4
+    chartjs-plugin-datalabels: ^0.7.0
+    deepmerge: ^4.2.2
+    detect-autofill: ^1.1.3
+    perfect-scrollbar: ^1.5.0
+    popper.js: ^1.16.1
+    tailwindcss: ^3.0.7
+  checksum: aa201f9cbe34d8ec846fb555b8722067240fb677f982511c1e4af5bcf7e832f6c7c03007e5a5b662f9e4f363e429077fb49cfdd917ca38cdadb7840b7ed4e61e
   languageName: node
   linkType: hard
 
@@ -25420,6 +25575,13 @@ __metadata:
   version: 1.10.2
   resolution: "yaml@npm:1.10.2"
   checksum: 5c28b9eb7adc46544f28d9a8d20c5b3cb1215a886609a2fd41f51628d8aaa5878ccd628b755dbcd29f6bb4921bd04ffbc6dcc370689bb96e594e2f9813d2605f
+  languageName: node
+  linkType: hard
+
+"yaml@npm:^2.1.1":
+  version: 2.1.1
+  resolution: "yaml@npm:2.1.1"
+  checksum: ef67e9d3e4b83234ba85bd5dc380164017620b7f1e1589fd0343c4c0ba500fe92388d75f5aba8af6346b02dda93a3ad0929eab210c41367bc6b786c0a0dca3af
   languageName: node
   linkType: hard
 
