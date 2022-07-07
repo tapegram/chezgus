@@ -1,19 +1,39 @@
-import { Link, routes } from '@redwoodjs/router'
+import { DateField, FieldError, Form, Label, Submit, SubmitHandler } from '@redwoodjs/forms'
 import { MetaTags } from '@redwoodjs/web'
 
+interface FormValues {
+  arrive: Date
+  departure: Date
+}
+
 const BorrowPage = () => {
+  const onSubmit: SubmitHandler<FormValues> = (data) => {
+    console.log(data)
+  }
   return (
     <>
       <MetaTags title="Borrow" description="Borrow page" />
+      <Form onSubmit={onSubmit}>
+        <Label name="arrive" errorClassName="error">Arrive</Label>
+        <DateField
+          name="arrive"
+          className="rw-input"
+          errorClassName="error"
+          validation={{ required: true }}
+        />
+        <FieldError name="arrive" className="error" />
 
-      <h1>BorrowPage</h1>
-      <p>
-        Find me in <code>./web/src/pages/BorrowPage/BorrowPage.tsx</code>
-      </p>
-      <p>
-        My default route is named <code>borrow</code>, link to me with `
-        <Link to={routes.borrow()}>Borrow</Link>`
-      </p>
+        <Label name="departure" errorClassName="error">Departure</Label>
+        <DateField
+          name="departure"
+          className="rw-input"
+          errorClassName="error"
+          validation={{ required: true }}
+        />
+        <FieldError name="departure" className="error" />
+
+        <Submit>Ask Gus!</Submit>
+      </Form>
     </>
   )
 }
